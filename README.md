@@ -1,7 +1,7 @@
 # Jimmy CMS
 
 A simple CMS with CRUD operations with articles and basic JWT-based authentication model.
-Impemented in .NET 5.0 Web Api, aligned with CQRS pattern. Solution was implemented with [MediatR library](https://github.com/jbogard/MediatR "MediatR library").
+Impemented in .NET 5.0 Web Api, aligned with [CQRS pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs "CQRS pattern"). Solution was implemented with [MediatR library](https://github.com/jbogard/MediatR "MediatR library").
 
 Consists of 4 projects: <br />
 <br /> 1. **[JimmyCms](https://github.com/sklite/Jimm/tree/main/JimmyCms/JimmyCms "JimmyCms")** - API application layer, contains controllers, startup configuration settings, view models.
