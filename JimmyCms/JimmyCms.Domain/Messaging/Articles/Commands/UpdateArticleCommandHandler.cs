@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using JimmyCms.Infrastructure;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
 
-namespace JimmyCms.Domain.Articles.Commands
+namespace JimmyCms.Domain.Messaging.Articles.Commands
 {
     public class UpdateArticleCommandHandler : IRequestHandler<UpdateArticleCommand, BasicResponse>
     {
@@ -19,7 +19,7 @@ namespace JimmyCms.Domain.Articles.Commands
 
         public async Task<BasicResponse> Handle(UpdateArticleCommand request, CancellationToken cancellationToken)
         {
-            var articleToUpdate = await _context.Articles.FirstOrDefaultAsync(a => a.Id == request.Id, cancellationToken);
+            var articleToUpdate = _context.Articles.FirstOrDefault(a => a.Id == request.Id);
 
             if (articleToUpdate == null)
                 throw new KeyNotFoundException($"Can't find article with id {request.Id}");

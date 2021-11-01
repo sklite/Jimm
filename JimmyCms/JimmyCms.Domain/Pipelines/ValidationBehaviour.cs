@@ -3,7 +3,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using FluentValidation;
-using JimmyCms.Domain.Articles;
+using JimmyCms.Domain.Messaging.Articles;
 using MediatR;
 
 namespace JimmyCms.Domain.Pipelines

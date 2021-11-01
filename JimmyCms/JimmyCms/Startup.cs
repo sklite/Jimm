@@ -33,15 +33,16 @@ namespace JimmyCms
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
                     RequireExpirationTime = true,
-                    ValidIssuer = "https://localhost:49154/",
-                    ValidAudience = "https://localhost:49154/",
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("quite long string that can be used as a symmetric security key"))
+                    ValidIssuer = Configuration["Security:TokenIssuer"],
+                    ValidAudience = Configuration["Security:TokenAudience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Security:Key"]))
                 };
             });
 
             services.AddControllers()
+                .AddXmlSerializerFormatters()
                 .AddNewtonsoftJson();
-            
+
             services.AddDomainServices(Configuration);
             services.AddDatabaseConnector(Configuration["DbSettings:ConnectionString"]);
 

@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "989e9d63-86d9-4385-b431-be439b2093a2",
+		"name": "Articles",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetArticles",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://{{environment}}/articles?skip=0&take=30&asc=false",
+					"protocol": "https",
+					"host": [
+						"{{environment}}"
+					],
+					"path": [
+						"articles"
+					],
+					"query": [
+						{
+							"key": "skip",
+							"value": "0"
+						},
+						{
+							"key": "take",
+							"value": "30"
+						},
+						{
+							"key": "asc",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddArticle",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJrbGtsayIsImp0aSI6IjhjNjUwNTM4LTRiYWMtNGVkNi05MGMxLWQ4MDA1NWFiMzNmOSIsImV4cCI6MTYzODM1NjcyNSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDkxNTQvIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDkxNTQvIn0.aQ1i2Z44QxgarI6jG4z9lXVmvCAyCXkWOxZ4DkdUvSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"Quite cool article title \",\r\n    \"body\": \"Настолько цепляющий текст статьи что не хочется отрываться\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{environment}}/articles/add",
+					"protocol": "https",
+					"host": [
+						"{{environment}}"
+					],
+					"path": [
+						"articles",
+						"add"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "jhjh",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetArticleById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{environment}}/articles/abff614a-2117-41ec-bb3f-1c53aa76c0eb",
+					"protocol": "https",
+					"host": [
+						"{{environment}}"
+					],
+					"path": [
+						"articles",
+						"abff614a-2117-41ec-bb3f-1c53aa76c0eb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteArticle",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://{{environment}}/articles/31f1ed20-8d03-4b2e-8159-4a3d3ba1c903",
+					"protocol": "https",
+					"host": [
+						"{{environment}}"
+					],
+					"path": [
+						"articles",
+						"31f1ed20-8d03-4b2e-8159-4a3d3ba1c903"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "jhjh",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateArticle",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJrbGtsayIsImp0aSI6IjlhMWIxMWE4LTE5YzAtNDRiOC05MDM3LTZmZTcyZGM1MDY1MSIsImV4cCI6MTYzODM0ODE4MSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDkxNTQvIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDkxNTQvIn0.OK1x1CFsXp36xyvNM4rEWq30BxunnaRD5mnQOrWAWZY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"Very smart title\",\r\n    \"body\": \"just sample update article body\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{environment}}/articles/abff614a-2117-41ec-bb3f-1c53aa76c0ea",
+					"protocol": "https",
+					"host": [
+						"{{environment}}"
+					],
+					"path": [
+						"articles",
+						"abff614a-2117-41ec-bb3f-1c53aa76c0ea"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "jhjh",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Username\" : \"klklk\",\r\n    \"Password\": \"vot tak\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{environment}}/Users",
+					"protocol": "https",
+					"host": [
+						"{{environment}}"
+					],
+					"path": [
+						"Users"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "jhjh",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

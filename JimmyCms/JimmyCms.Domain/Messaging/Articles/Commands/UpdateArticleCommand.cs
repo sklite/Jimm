@@ -1,7 +1,7 @@
 ﻿using System;
 using MediatR;
 
-namespace JimmyCms.Domain.Articles.Commands
+namespace JimmyCms.Domain.Messaging.Articles.Commands
 {
     public record UpdateArticleCommand : IRequest<BasicResponse>
     {

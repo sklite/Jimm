@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
 using JimmyCms.ApiModels;
-using JimmyCms.Domain.Articles.Commands;
-using JimmyCms.Domain.Articles.Queries;
+using JimmyCms.Domain.Messaging.Articles.Commands;
+using JimmyCms.Domain.Messaging.Articles.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

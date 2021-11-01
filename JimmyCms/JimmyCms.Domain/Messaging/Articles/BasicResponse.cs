@@ -1,4 +1,4 @@
-﻿namespace JimmyCms.Domain.Articles
+﻿namespace JimmyCms.Domain.Messaging.Articles
 {
     public class BasicResponse
     {

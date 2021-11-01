@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 using JimmyCms.ApiModels;
-using JimmyCms.Domain.Authorization;
+using JimmyCms.Domain.Messaging.Authorization;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

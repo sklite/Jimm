@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
-using JimmyCms.Domain.Articles.Commands;
+using JimmyCms.Domain.Messaging.Articles.Commands;
+using JimmyCms.Domain.Settings;
 using Microsoft.Extensions.Options;
 
 namespace JimmyCms.Domain.Validators

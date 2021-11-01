@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using JimmyCms.Infrastructure;
 using MediatR;
 
-namespace JimmyCms.Domain.Articles.Commands
+namespace JimmyCms.Domain.Messaging.Articles.Commands
 {
     public class CreateArticleCommandHandler : IRequestHandler<CreateArticleCommand, BasicResponse>
     {

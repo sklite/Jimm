@@ -1,7 +1,7 @@
 ﻿using System;
 using MediatR;
 
-namespace JimmyCms.Domain.Articles.Queries
+namespace JimmyCms.Domain.Messaging.Articles.Queries
 {
     public record GetArticleByIdQuery : IRequest<BasicResponse>
     {

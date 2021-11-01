@@ -1,7 +1,7 @@
-﻿using JimmyCms.Domain.Articles;
+﻿using JimmyCms.Domain.Messaging.Articles;
 using MediatR;
 
-namespace JimmyCms.Domain.Authorization
+namespace JimmyCms.Domain.Messaging.Authorization
 {
     public record AuthenticateCommand : IRequest<BasicResponse>
     {

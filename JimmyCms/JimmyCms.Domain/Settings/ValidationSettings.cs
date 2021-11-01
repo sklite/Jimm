@@ -1,4 +1,4 @@
-﻿namespace JimmyCms.Domain
+﻿namespace JimmyCms.Domain.Settings
 {
     public class ValidationSettings
     {

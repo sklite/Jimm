@@ -5,7 +5,7 @@ using JimmyCms.Infrastructure;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace JimmyCms.Domain.Articles.Queries
+namespace JimmyCms.Domain.Messaging.Articles.Queries
 {
     public class CreateArticleCommandHandler : IRequestHandler<GetArticleByIdQuery, BasicResponse>
     {

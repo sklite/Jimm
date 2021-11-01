@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using JimmyCms.Infrastructure;
 using MediatR;
 
-namespace JimmyCms.Domain.Articles.Queries
+namespace JimmyCms.Domain.Messaging.Articles.Queries
 {
     public class GetArticlesQueryHandler : IRequestHandler<GetArticlesQuery, BasicResponse>
     {
