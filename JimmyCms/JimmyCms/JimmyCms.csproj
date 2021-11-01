@@ -23,8 +23,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\JimmyCms.DAL\JimmyCms.Infrastructure.csproj" />
-    <ProjectReference Include="..\..\JimmyCms.Models\JimmyCms.Domain.csproj" />
+    <ProjectReference Include="..\JimmyCms.Infrastructure\JimmyCms.Infrastructure.csproj" />
+    <ProjectReference Include="..\JimmyCms.Domain\JimmyCms.Domain.csproj" />
   </ItemGroup>
 
 </Project>

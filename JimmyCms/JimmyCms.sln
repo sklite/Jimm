@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JimmyCms", "JimmyCms\JimmyCms.csproj", "{DBDBA57A-1F04-483D-B069-731A94906037}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JimmyCms.Domain", "..\JimmyCms.Models\JimmyCms.Domain.csproj", "{6301F625-96F1-49AA-953F-428303E3AE95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JimmyCms.Domain", "JimmyCms.Domain\JimmyCms.Domain.csproj", "{6301F625-96F1-49AA-953F-428303E3AE95}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JimmyCms.Infrastructure", "..\JimmyCms.DAL\JimmyCms.Infrastructure.csproj", "{DCDAE5D1-3341-41D8-93C6-77F891869961}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JimmyCms.Infrastructure", "JimmyCms.Infrastructure\JimmyCms.Infrastructure.csproj", "{DCDAE5D1-3341-41D8-93C6-77F891869961}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JimmyCms.Tests", "..\JimmyCms.Tests\JimmyCms.Tests.csproj", "{97C2DC6D-E909-445E-801A-4E367C6BE087}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JimmyCms.Tests", "JimmyCms.Tests\JimmyCms.Tests.csproj", "{97C2DC6D-E909-445E-801A-4E367C6BE087}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

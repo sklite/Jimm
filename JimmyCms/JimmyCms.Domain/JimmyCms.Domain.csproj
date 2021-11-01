@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\JimmyCms.DAL\JimmyCms.Infrastructure.csproj" />
+    <ProjectReference Include="..\JimmyCms.Infrastructure\JimmyCms.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
